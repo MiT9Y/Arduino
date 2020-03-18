@@ -1,9 +1,8 @@
-# Arduino
+#include <UTFString.h> // library usage examples
 
-## UTF String
-This library allows you to work correctly with UTF-8 encoding (1-4, bytes per character).
-#### USAGE EXAMPLE
-```c
+void setup() {
+  Serial.begin(9600);
+
 //INIT VARIABLES  
   UTFString UTF_Str = "HELLO МИР!"; Serial.println(String(UTF_Str)+" - LEN="+UTF_Str.length());
   UTF_Str = String(3.52384,6); Serial.println(String(UTF_Str)+" - LEN="+UTF_Str.length());
@@ -45,4 +44,9 @@ This library allows you to work correctly with UTF-8 encoding (1-4, bytes per ch
   UTF_Str = "МИР! HELLO МИР.";
   UTF_Str.replace("МИР", "WORLD");
   Serial.println(UTF_Str);//WORLD! HELLO WORLD.
-```
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}
