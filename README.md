@@ -1,7 +1,7 @@
 # Arduino
 
 ## UTF String
-This library allows you to work correctly with UTF-8 encoding (1-4, bytes per character).
+This library allows you to work correctly with UTF-8 encoding (1-4 bytes per character).
 #### USAGE EXAMPLE
 ```c
 //INIT VARIABLES  
